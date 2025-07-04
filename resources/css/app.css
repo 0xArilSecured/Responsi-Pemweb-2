@@ -1,3 +1,7 @@
+/* Google Font : Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Tailwind CSS */
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -6,6 +10,26 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-inter: "Inter", sans-serif;
+
+    /* Color */
+    --color-primary: oklch(58.5% 0.233 277.117);
+    --color-primary-hover: oklch(51.1% 0.262 276.966);
+}
+
+@layer components {
+  .input-no-autofill {
+    /* tidak bisa target pseudo-element langsung dalam class ini,
+       tapi bisa untuk gaya umum */
+    @apply text-gray-800 caret-gray-800;
+  }
+
+  input.input-no-autofill:-webkit-autofill,
+  input.input-no-autofill:-webkit-autofill:hover,
+  input.input-no-autofill:-webkit-autofill:focus,
+  input.input-no-autofill:-webkit-autofill:active {
+    transition: background-color 9999s ease-in-out 0s;
+    -webkit-text-fill-color: #111;
+    caret-color: #111;
+  }
 }
