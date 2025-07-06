@@ -4,7 +4,7 @@
             <p data-aos="fade-right" data-aos-delay="300" class="absolute top-5 right-5 w-full flex justify-end gap-1 text-xs text-gray-400">Already have an account? <a class="text-primary" href="{{ route('login') }}">Login</a></p>
             <div data-aos="fade-up" data-aos-delay="400">
                 <h2 class="font-bold text-4xl mb-2">Sign Up</h2>
-                <p class="text-xs text-gray-400 mb-5">Organize Your Task with JustDo</p>
+                <p class="text-xs text-gray-400 mb-5">Organize Your Employees with EmpSecured</p>
             </div>
             <form data-aos="fade-up" data-aos-delay="500" method="POST" action="{{ route('register') }}">
                 @csrf
@@ -38,7 +38,7 @@
         <div class="bg-primary w-1/2 h-full relative flex items-center justify-center">
             <div data-aos="fade-right" data-aos-delay="300" class="flex gap-3 items-center absolute top-5 right-5">
                 <div class="w-5 h-5 rounded-full bg-white"></div>
-                <h2 class="font-bold text-white text-2xl">JustDo</h2>
+                <h2 class="font-bold text-white text-2xl">EmpSecured</h2>
             </div>
             <img data-aos="zoom-in" data-aos-delay="400" class="w-90" src="{{ asset('resources/svg/business-tasklist-1.svg') }}" alt="">
         </div>

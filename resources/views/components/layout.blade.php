@@ -16,7 +16,7 @@
     <!-- Alpine JS -->
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body class="h-dvh w-dvw font-inter text-sm text-gray-800 flex justify-center items-center">
+<body class="h-dvh w-[100%] font-inter text-sm text-gray-800 flex justify-center items-center">
     {{ $slot }}
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
